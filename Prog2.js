@@ -9,7 +9,4 @@ const person = {
   },
 };
 
-person.greet();
-
-//Correct git commit message: "Added greet method to person object"
-
+person.greet()
