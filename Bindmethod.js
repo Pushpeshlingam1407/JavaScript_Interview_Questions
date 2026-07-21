@@ -21,3 +21,10 @@ let details = person.showDetails.bind(student); //* Binds the showDetails method
 
 details(); //* Calls the newly created bound function with the student context
 details("Chennai", "TN"); //* Calls the newly created bound function with the student context and passes arguments
+
+person.showDetails.call(student, "Delhi", "India");
+
+person.showDetails.apply(student, ["Delhi", "India"]);
+
+const fn = person.showDetails.bind(student, "Delhi", "India");
+fn();
