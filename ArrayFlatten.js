@@ -25,3 +25,4 @@ function flatArray(nums) {
 }
 
 console.log(flatArray(nums)); //* Flattened array
+
