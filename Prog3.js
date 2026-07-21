@@ -17,11 +17,11 @@ let count = name.split("").reduce((acc, ch) => {
 }, {});
 console.log(count);
 
-// //Method 3: Using forEach method
-// let countForEach = {};
-// name.split("").forEach((ch) => {
-//   countForEach[ch] = (countForEach[ch] || 0) + 1;
-// });
-// console.log(countForEach);
+//Method 3: Using forEach method
+let countForEach = {};
+name.split("").forEach((ch) => {
+  countForEach[ch] = (countForEach[ch] || 0) + 1;
+});
+console.log(countForEach);
 
 //commit message: "Added character count methods using for loop, reduce, and forEach."
