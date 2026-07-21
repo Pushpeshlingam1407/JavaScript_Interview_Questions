@@ -24,4 +24,9 @@ name.split("").forEach((ch) => {
 });
 console.log(countForEach);
 
-//commit message: "Added character count methods using for loop, reduce, and forEach."
+//Method 4: Using Map
+let countMap = new Map();
+name.split("").forEach((ch) => {
+  countMap.set(ch, (countMap.get(ch) || 0) + 1);
+});
+console.log(Object.fromEntries(countMap));
